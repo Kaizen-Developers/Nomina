@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
                 before: Int, count: Int
             ) {
                 SumFields()
+                SumDescuentos()
             }
         })
         edextra.addTextChangedListener(object : TextWatcher {
@@ -46,6 +47,7 @@ class MainActivity : AppCompatActivity() {
                 before: Int, count: Int
             ) {
                 SumFields()
+                SumDescuentos()
             }
         })
         edbonifica.addTextChangedListener(object : TextWatcher {
@@ -63,6 +65,7 @@ class MainActivity : AppCompatActivity() {
                 before: Int, count: Int
             ) {
                 SumFields()
+                SumDescuentos()
             }
         })
     }
@@ -72,6 +75,9 @@ class MainActivity : AppCompatActivity() {
 
         if (edsalario.text.toString() != "") {
             var uno = Integer.parseInt(edsalario.text.toString())
+            if (uno < (828116*2) ){
+                total += 97032
+            }
             total += uno
         }
         if (edextra.text.toString() != "") {
@@ -82,9 +88,24 @@ class MainActivity : AppCompatActivity() {
             var tres = Integer.parseInt(edbonifica.text.toString())
             total += tres
         }
-        subtotal.text = total.toString()
+        totalDevengado.text = total.toString()
 
     }
 
+    fun SumDescuentos() {
+        var Salud=0
 
+        if (edsalario.text.toString() != "") {
+            var dos=0
+            if (edextra.text.toString() != "") {
+                dos = Integer.parseInt(edextra.text.toString())
+            }
+            var uno = Integer.parseInt(edsalario.text.toString())
+            Salud= ((uno+dos)*(0.04)*(2)).toInt()
+        }
+        totalDescuentos.text = Salud.toString()
+
+
+        subtotalNomina.text=(Integer.parseInt(totalDevengado.text.toString())+Integer.parseInt(totalDescuentos.text.toString())).toString()
+    }
 }
