@@ -106,6 +106,6 @@ class MainActivity : AppCompatActivity() {
         totalDescuentos.text = Salud.toString()
 
 
-        subtotalNomina.text=(Integer.parseInt(totalDevengado.text.toString())+Integer.parseInt(totalDescuentos.text.toString())).toString()
+        subtotalNomina.text=(Integer.parseInt(totalDevengado.text.toString())-Integer.parseInt(totalDescuentos.text.toString())).toString()
     }
 }
