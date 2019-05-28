@@ -6,6 +6,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.StringBufferInputStream
+import java.text.DecimalFormat
 
 
 class MainActivity : AppCompatActivity() {
@@ -88,7 +89,7 @@ class MainActivity : AppCompatActivity() {
             var tres = Integer.parseInt(edbonifica.text.toString())
             total += tres
         }
-        totalDevengado.text = total.toString()
+        totalDevengado.text =  total.toString()
 
     }
 
