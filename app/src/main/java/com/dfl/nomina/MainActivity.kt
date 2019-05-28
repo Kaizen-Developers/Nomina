@@ -90,7 +90,6 @@ class MainActivity : AppCompatActivity() {
             total += tres
         }
         totalDevengado.text =  total.toString()
-
     }
 
     fun SumDescuentos() {
@@ -105,7 +104,6 @@ class MainActivity : AppCompatActivity() {
             Salud= ((uno+dos)*(0.04)*(2)).toInt()
         }
         totalDescuentos.text = Salud.toString()
-
 
         subtotalNomina.text=(Integer.parseInt(totalDevengado.text.toString())-Integer.parseInt(totalDescuentos.text.toString())).toString()
     }
