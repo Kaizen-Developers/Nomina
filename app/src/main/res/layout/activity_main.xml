@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent"
-                xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+                android:layout_height="match_parent">
 
     <ScrollView
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -28,6 +28,7 @@
                               android:layout_height="wrap_content"
                               android:textSize="18dp"
                               android:text="#"
+                              android:background="@android:color/holo_green_dark"
                               android:textColor="@android:color/black"
                               android:textStyle="bold"
                               android:layout_gravity="center_vertical"
@@ -37,6 +38,7 @@
                               android:layout_height="wrap_content"
                               android:textSize="18dp"
                               android:text="Salario"
+                              android:background="@android:color/holo_green_dark"
                               android:textColor="@android:color/black"
                               android:textStyle="bold"
                               android:layout_gravity="center_vertical"
@@ -45,6 +47,7 @@
                               android:layout_height="wrap_content"
                               android:textSize="18dp"
                               android:text="Aux. Transporte"
+                              android:background="@android:color/holo_green_dark"
                               android:textColor="@android:color/black"
                               android:textStyle="bold"
                               android:layout_gravity="center_vertical"
@@ -54,6 +57,7 @@
                               android:layout_gravity="center_vertical"
                               android:textSize="18dp"
                               android:text="Horas Extra"
+                              android:background="@android:color/holo_green_dark"
                               android:textColor="@android:color/black"
                               android:textStyle="bold"
                               android:gravity="center"/>
@@ -62,6 +66,7 @@
                               android:layout_gravity="center_vertical"
                               android:textSize="18dp"
                               android:text="Bonificacion"
+                              android:background="@android:color/holo_green_dark"
                               android:textColor="@android:color/black"
                               android:textStyle="bold"
                               android:gravity="center"/>
@@ -69,6 +74,7 @@
                               android:layout_height="wrap_content"
                               android:textSize="18dp"
                               android:text="Salud"
+                              android:background="@android:color/holo_green_dark"
                               android:textColor="@android:color/black"
                               android:textStyle="bold"
                               android:layout_gravity="center_vertical"
@@ -77,6 +83,7 @@
                               android:layout_height="wrap_content"
                               android:textSize="18dp"
                               android:text="Pension"
+                              android:background="@android:color/holo_green_dark"
                               android:textColor="@android:color/black"
                               android:textStyle="bold"
                               android:layout_gravity="center_vertical"
@@ -85,6 +92,7 @@
                               android:layout_height="wrap_content"
                               android:textSize="17dp"
                               android:text="Tot. Devengado"
+                              android:background="@android:color/holo_green_dark"
                               android:textColor="@android:color/black"
                               android:textStyle="bold"
                               android:gravity="center"/>
@@ -92,12 +100,14 @@
                               android:layout_height="wrap_content"
                               android:textSize="18dp"
                               android:text="Tot. Descuento"
+                              android:background="@android:color/holo_green_dark"
                               android:textColor="@android:color/black"
                               android:textStyle="bold"
                               android:gravity="center"/>
                     <TextView android:layout_width="99dp"
                               android:layout_height="wrap_content"
                               android:textSize="18dp"
+                              android:background="@android:color/holo_green_dark"
                               android:layout_gravity="center_vertical"
                               android:text="SubTotal"
                               android:textColor="@android:color/black"
@@ -121,6 +131,7 @@
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edsalario"
+                              android:gravity="center_horizontal"
                               android:digits="0987654321"
                               android:textSize="18sp"
                               android:inputType="number"/>
@@ -128,6 +139,7 @@
                               android:layout_height="wrap_content"
                               android:textSize="18dp"
                               android:text="0"
+                              android:id="@+id/edauxilio"
                               android:textColor="@android:color/black"
                               android:textStyle="bold"
                               android:layout_gravity="center_vertical"
@@ -147,6 +159,7 @@
                               android:inputType="number"/>
                     <TextView android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
+                              android:id="@+id/edsalud"
                               android:textSize="18dp"
                               android:text="0"
                               android:textColor="@android:color/black"
@@ -154,6 +167,7 @@
                               android:gravity="center"/>
                     <TextView android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
+                              android:id="@+id/edpension"
                               android:textSize="18dp"
                               android:text="0"
                               android:textColor="@android:color/black"
@@ -183,7 +197,326 @@
                               android:textSize="20dp"
                               android:text="0"/>
                 </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="2."
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
 
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edsalario2"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:id="@+id/edauxilio2"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edextra2"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edbonifica2"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edsalud2"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edpension2"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:id="@+id/totalDevengado2"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/totalDescuentos2"
+                              android:textStyle="bold"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/subtotalNomina2"
+                              android:textStyle="bold"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="3."
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edsalario3"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:id="@+id/edauxilio3"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edextra3"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edbonifica3"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edsalud3"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edpension3"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:id="@+id/totalDevengado3"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/totalDescuentos3"
+                              android:textStyle="bold"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/subtotalNomina3"
+                              android:textStyle="bold"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="4."
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edsalario4"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:id="@+id/edauxilio4"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edextra4"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edbonifica4"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edsalud4"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edpension4"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:id="@+id/totalDevengado4"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/totalDescuentos4"
+                              android:textStyle="bold"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/subtotalNomina4"
+                              android:textStyle="bold"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="5."
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edsalario5"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:id="@+id/edauxilio5"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edextra5"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edbonifica5"
+                              android:digits="0987654321"
+                              android:textSize="18sp"
+                              android:inputType="number"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edsalud5"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edpension5"
+                              android:textSize="18dp"
+                              android:text="0"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:id="@+id/totalDevengado5"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/totalDescuentos5"
+                              android:textStyle="bold"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/subtotalNomina5"
+                              android:textStyle="bold"
+                              android:gravity="center"
+                              android:textSize="20dp"
+                              android:text="0"/>
+                </TableRow>
             </TableLayout>
 
 
@@ -192,6 +525,7 @@
     </ScrollView>
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="totales"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:text="Registro Contable"/>

@@ -1,15 +1,19 @@
 package com.dfl.nomina
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
-import java.io.StringBufferInputStream
-import java.text.DecimalFormat
 
 
 class MainActivity : AppCompatActivity() {
+    private var auxilioTra: Int = 0
+    private var salud: Int = 0
+    private var pension: Int = 0
+    private var saldosPorPagar: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,14 +76,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun SumFields() {
-        var total=0
+        var total = 0
+        auxilioTra = 0
 
         if (edsalario.text.toString() != "") {
             var uno = Integer.parseInt(edsalario.text.toString())
-            if (uno < (828116*2) ){
-                total += 97032
+            if (uno < (828116 * 2)) {
+                auxilioTra = 97032
             }
-            total += uno
+            total += uno + auxilioTra
         }
         if (edextra.text.toString() != "") {
             var dos = Integer.parseInt(edextra.text.toString())
@@ -89,22 +94,35 @@ class MainActivity : AppCompatActivity() {
             var tres = Integer.parseInt(edbonifica.text.toString())
             total += tres
         }
-        totalDevengado.text =  total.toString()
+        edauxilio.text = auxilioTra.toString()
+        totalDevengado.text = total.toString()
     }
 
     fun SumDescuentos() {
-        var Salud=0
+        salud = 0
+        pension = 0
 
         if (edsalario.text.toString() != "") {
-            var dos=0
+            var dos = 0
             if (edextra.text.toString() != "") {
                 dos = Integer.parseInt(edextra.text.toString())
             }
             var uno = Integer.parseInt(edsalario.text.toString())
-            Salud= ((uno+dos)*(0.04)*(2)).toInt()
+            salud = ((uno + dos) * (0.04)).toInt()
+            pension = ((uno + dos) * (0.04)).toInt()
         }
-        totalDescuentos.text = Salud.toString()
+        edsalud.text = salud.toString()
+        edpension.text = pension.toString()
+        totalDescuentos.text = (salud + pension).toString()
 
-        subtotalNomina.text=(Integer.parseInt(totalDevengado.text.toString())-Integer.parseInt(totalDescuentos.text.toString())).toString()
+        subtotalNomina.text =
+            (Integer.parseInt(totalDevengado.text.toString()) - Integer.parseInt(totalDescuentos.text.toString())).toString()
+
+    }
+
+    fun totales(view: View) {
+        saldosPorPagar += Integer.parseInt(subtotalNomina.text.toString())
+        val intent = Intent(view.context, RegistroActivity::class.java)
+        startActivity(intent)
     }
 }
