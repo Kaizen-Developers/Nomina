@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ScrollView
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -552,10 +552,18 @@
         </HorizontalScrollView>
 
     </ScrollView>
-    <Button android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/material_unelevated_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="totales"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="25dp"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:textColor="@android:color/black"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:text="Registro Contable"/>
+
 </RelativeLayout>
