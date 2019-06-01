@@ -559,7 +559,7 @@
             android:onClick="totales"
             android:textSize="18sp"
             android:padding="10dp"
-            android:layout_margin="25dp"
+            android:layout_margin="2dp"
             style="@style/AppTheme.RoundedCornerMaterialButton"
             android:textColor="@android:color/black"
             android:layout_alignParentBottom="true"
