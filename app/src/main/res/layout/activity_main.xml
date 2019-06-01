@@ -131,6 +131,7 @@
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edsalario"
+                              android:text="2300000"
                               android:gravity="center_horizontal"
                               android:digits="0987654321"
                               android:textSize="18sp"
@@ -147,15 +148,19 @@
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edextra"
+                              android:text="0"
                               android:digits="0987654321"
+                              android:gravity="center_horizontal"
                               android:textSize="18sp"
                               android:inputType="number"/>
 
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edbonifica"
+                              android:text="0"
                               android:digits="0987654321"
                               android:textSize="18sp"
+                              android:gravity="center_horizontal"
                               android:inputType="number"/>
                     <TextView android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
@@ -214,6 +219,8 @@
                               android:id="@+id/edsalario2"
                               android:digits="0987654321"
                               android:textSize="18sp"
+                              android:gravity="center_horizontal"
+                              android:text="1900000"
                               android:inputType="number"/>
                     <TextView android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
@@ -227,15 +234,19 @@
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edextra2"
+                              android:text="0"
                               android:digits="0987654321"
+                              android:gravity="center_horizontal"
                               android:textSize="18sp"
                               android:inputType="number"/>
 
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edbonifica2"
+                              android:gravity="center_horizontal"
                               android:digits="0987654321"
                               android:textSize="18sp"
+                              android:text="100000"
                               android:inputType="number"/>
                     <TextView android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
@@ -292,7 +303,9 @@
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edsalario3"
+                              android:gravity="center_horizontal"
                               android:digits="0987654321"
+                              android:text="2800000"
                               android:textSize="18sp"
                               android:inputType="number"/>
                     <TextView android:layout_width="wrap_content"
@@ -307,15 +320,19 @@
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edextra3"
+                              android:gravity="center_horizontal"
                               android:digits="0987654321"
+                              android:text="0"
                               android:textSize="18sp"
                               android:inputType="number"/>
 
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edbonifica3"
+                              android:gravity="center_horizontal"
                               android:digits="0987654321"
                               android:textSize="18sp"
+                              android:text="100000"
                               android:inputType="number"/>
                     <TextView android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
@@ -372,6 +389,8 @@
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edsalario4"
+                              android:gravity="center_horizontal"
+                              android:text="828116"
                               android:digits="0987654321"
                               android:textSize="18sp"
                               android:inputType="number"/>
@@ -388,13 +407,17 @@
                               android:layout_height="wrap_content"
                               android:id="@+id/edextra4"
                               android:digits="0987654321"
+                              android:text="48304"
                               android:textSize="18sp"
+                              android:gravity="center_horizontal"
                               android:inputType="number"/>
 
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
+                              android:gravity="center_horizontal"
                               android:id="@+id/edbonifica4"
                               android:digits="0987654321"
+                              android:text="0"
                               android:textSize="18sp"
                               android:inputType="number"/>
                     <TextView android:layout_width="wrap_content"
@@ -453,6 +476,8 @@
                               android:layout_height="wrap_content"
                               android:id="@+id/edsalario5"
                               android:digits="0987654321"
+                              android:gravity="center_horizontal"
+                              android:text="1200000"
                               android:textSize="18sp"
                               android:inputType="number"/>
                     <TextView android:layout_width="wrap_content"
@@ -467,15 +492,19 @@
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edextra5"
+                              android:text="66250"
                               android:digits="0987654321"
+                              android:gravity="center_horizontal"
                               android:textSize="18sp"
                               android:inputType="number"/>
 
                     <EditText android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:id="@+id/edbonifica5"
+                              android:gravity="center_horizontal"
                               android:digits="0987654321"
                               android:textSize="18sp"
+                              android:text="0"
                               android:inputType="number"/>
                     <TextView android:layout_width="wrap_content"
                               android:layout_height="wrap_content"

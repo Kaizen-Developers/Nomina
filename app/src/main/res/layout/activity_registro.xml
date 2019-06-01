@@ -1,10 +1,1219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".RegistroActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+                android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical" android:scrollbarAlwaysDrawVerticalTrack="true">
+        <HorizontalScrollView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content">
+
+            <TableLayout
+                    android:id="@+id/gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:scrollbars="vertical"
+                    android:isScrollContainer="true"
+                    android:columnWidth="100dp"
+                    android:stretchMode="spacingWidthUniform">
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                >
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Codigo"
+                              android:background="@android:color/holo_green_dark"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Detalle"
+                              android:background="@android:color/holo_green_dark"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center_vertical"
+                              android:textSize="18dp"
+                              android:text="Parcial"
+                              android:background="@android:color/holo_green_dark"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center_vertical"
+                              android:textSize="18dp"
+                              android:text="Debe"
+                              android:background="@android:color/holo_green_dark"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Haber"
+                              android:background="@android:color/holo_green_dark"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="5105"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Gastos de personal"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:id="@+id/gastPersonal"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510506"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Sueldos"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbsuaeldos"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510515"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Horas extras y recargos"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbHextra"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510527"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Auxilio de Transporte"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbAuxtra"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510530"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Cesantias"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbcesantias"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510533"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Intereses sobre Cesantias"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbIntcesantias"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510536"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Prima de Servicios"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbPrimServ"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510539"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Vacaciones"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbvcaciones"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510548"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Bonificaciones"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbbonificaciones"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510568"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Aportes ARL"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbarl"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510570"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Aportes pensiones"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbpension"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="510572"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Aportes caja de compensacion"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbcajacomp"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="2370"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Retenciones y aportes de nomina"
+                              android:textStyle="bold"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textStyle="bold"
+                              android:id="@+id/lbtotAporNomina"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="237005"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Aportes EPS"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbAportSalud"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="237006"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Aportes ARL"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbAportARL"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="237010"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Aportes ICBF, SENA y cajas"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbcajas"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="2380"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Acreedores varios"
+                              android:textStyle="bold"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbapVarios"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textStyle="bold"
+                              android:id="@+id/totvarios"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="238030"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Aportes fondo de pensiones"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbpensioVarios"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="2610"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Para Obligaciones laborales"
+                              android:textStyle="bold"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:id="@+id/lbtotobliglabo"
+                              android:textStyle="bold"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="261005"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Cesantias"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lboblCesantias"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="261010"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Intereses sobre Cesantias"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbIntcesantiados"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="261015"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Vacaciones"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbvcacionesdos"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="261020"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Prima de Servicios"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:id="@+id/lbPrimServdos"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="2505"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="Salarios Por pagar"
+                              android:textStyle="bold"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:id="@+id/lbsaldospagar"
+                              android:textStyle="bold"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="TOTALES"
+                              android:textStyle="bold"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text=""
+                              android:textColor="@android:color/black"
+                              android:background="@android:color/holo_orange_light"
+                              android:textStyle="bold"
+                              android:id="@+id/totalDebe"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@android:color/holo_green_light"
+                              android:textSize="18dp"
+                              android:id="@+id/totalHaber"
+                              android:textStyle="bold"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="18dp"
+                              android:text="R/ registro contable de causacion de la nomina, /naportes parafiscales y prestaciones sociales"
+                            android:layout_span="2"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center"/>
+
+
+
+
+
+                </TableRow>
+            </TableLayout>
+
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+</RelativeLayout>
